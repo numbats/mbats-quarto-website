@@ -9,8 +9,8 @@ website:
     right:
       - href: events.qmd
         text: Events
-      - href: unit_guide.qmd
-        text: Unit Guide
+      # - href: unit_guide.qmd
+      #   text: Unit Guide
       - href: course_map.qmd
         text: Course Map
 

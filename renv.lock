@@ -993,9 +993,9 @@
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
       "RemoteRepo": "ggtilecal",
-      "RemoteUsername": "cynthiahqy",
+      "RemoteUsername": "janithwanni",
       "RemoteRef": "HEAD",
-      "RemoteSha": "5200bc3cdc3ed9053e853247581d80c63305ca1a",
+      "RemoteSha": "162af8e5bdbf13095b5f7ac820fd306bc478fd91",
       "NeedsCompilation": "no",
       "Author": "Cynthia A. Huang [aut, cre] (<https://orcid.org/0000-0002-9218-987X>)",
       "Maintainer": "Cynthia A. Huang <cynthia.huang@monash.edu>"

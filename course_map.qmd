@@ -1,0 +1,16 @@
+---
+pagetitle: "Unit Guide"
+---
+
+Explore Your Learning Pathway
+
+Welcome to the Unit Pathway Explorer, an interactive guide designed to help you understand how each unit in the Business Analytics Masters program connects, builds, and branches into your area of specialisation. Whether you're planning your next semester or mapping your full academic journey, this visual network lets you see prerequisites, recommended progressions, and thematic clusters at a glance.
+
+Use the map to hover, click, and discover how each unit fits into the bigger picture—so you can chart a study plan that aligns with your goals.
+
+### How to Use the Unit Network
+
+* Hover over a unit to highlight its prerequisites and dependents
+* Click to open a short overview, assessment breakdown, and workload
+* Filter by stream (e.g., Research, Industry, Design, Data)
+* Compare multiple pathways to plan your semesters with confidence
