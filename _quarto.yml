@@ -6,6 +6,11 @@ project:
 website:
   title: "MBAts"
   navbar:
+    search: false
+    pinned: true
+    tools:
+      - icon: discord
+        href: mailto:Krisanat.Anukarnsakulchularp@monash.edu 
     right:
       - href: events.qmd
         text: Events

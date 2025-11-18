@@ -1,17 +1,5 @@
 ---
 pagetitle: MBAt Hang
-format:
-  html:
-    include-in-header:
-      text: |
-        <style>        
-        .resources-list {
-        color: red
-        }
-        .resource {
-        color: blue
-        }
-        </style>
 ---
 
 # MBAt Hang: Your Alumni & Student Hub 
@@ -19,40 +7,124 @@ format:
 
 Welcome to MBAt Hang, the central gathering place for current students and alumni of the Business Analytics Masters program. This platform is built to strengthen community ties, celebrate achievements, and keep everyone informed about upcoming opportunities. Whether you're a recent graduate looking to stay connected or a current student seeking guidance, this space is designed to help you grow, collaborate, and stay in the loop.
 
-# Upcoming Events
-
-🎓 Alumni Networking Night
-Date: March 14, 2025
-Location: University Atrium
-Reconnect with your cohort, meet new graduates, and build relationships with professionals across a wide range of industries.
-
-💡 Career Pathways Panel
-Date: April 2, 2025
-Location: Learning Theatre 3
-Hear alumni share their career journeys, challenges, and advice for carving your path after graduation.
-
-🧠 Research Spotlight Showcase
-Date: May 20, 2025
-Location: Innovation Hub
-Current students present their capstone and thesis projects to alumni, faculty, and peers in a friendly exhibition-style event.
-
-🎉 Annual Community Dinner
-Date: June 8, 2025
-Location: Grand Hall
-A celebratory evening bringing together students, alumni, and faculty for food, stories, and recognition of outstanding contributions.
-
-
-# Resources for students
-
 :::{.resources-list}
-:::{.resource}
-Unit Guide
+:::{.resource style="text-align: center"}
+
+#### Upcoming events
+
+Curious about what’s happening this semester? Head over to the [Events](/events) tab to explore upcoming workshops, meet-ups, and alumni sessions designed to help you connect, learn, and grow.
+
 :::
-:::{.resource}
-Course Map
+:::{.resource style="text-align: center"}
+
+#### Unit Guide
+
+Planning your pathway? Explore the [Course Map](/course-map) to see how each unit connects and discover the study route that works best for you.
+
 :::
 :::
 
-# Connect with us
+<br/>
 
-Want to connect with current and past MBAt Students? Send an email to [Krisanat.Anukarnsakulchularp@monash.edu](mailto:Krisanat.Anukarnsakulchularp@monash.edu]) to join the official discord server
+:::{.resource}
+
+#### Connect with us
+
+Want to connect outside class? Join our Discord server to chat, collaborate, and stay in the loop with fellow students and alumni.
+
+:::{.discord-server}
+```{=html}
+<style>
+  /* Container */
+  .server-card{
+    display:inline-flex;
+    align-items:center;
+    gap:12px;
+    background:var(--brand-purple);
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow:var(--shadow);
+    min-width:260px;
+    max-width:420px;
+    color:var(--brand-white);
+  }
+
+  /* Text column */
+  .server-meta{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+  }
+  .server-name{
+    font-weight:600;
+    font-size:15px;
+    letter-spacing:0.2px;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+  }
+  .server-desc{
+    font-size:12px;
+  }
+
+  /* User count chip */
+  .users{
+    margin-left:auto;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    flex: 0 0 auto;
+  }
+  .users .count{
+    min-width:62px;
+    text-align:center;
+    background:var(--glass);
+    padding:8px 10px;
+    border-radius:10px;
+    font-weight:700;
+    font-size:14px;
+    color:var(--text);
+  }
+  .users .label{
+    font-size:11px;
+    text-align:center;
+  }
+
+</style>
+<!-- Example card -->
+<div class="server-card" id="server-card-1" role="region" aria-label="Server status" aria-live="polite"
+     data-server-name="Arcane Designers" data-user-count="287">
+  <div class="server-meta">
+    <div class="server-name" id="server-name-1">MBAT</div>
+    <div class="server-desc" id="server-desc-1">A fun server for all things Stats, BA and MBAT related !!</div>
+  </div>
+
+  <div class="users" aria-hidden="false">
+    <div class="count" id="user-count-1" aria-label="Current users">33</div>
+    <div class="label">users</div>
+  </div>
+</div>
+
+<script>
+  fetch("https://discord.com/api/invites/j7C7kGTXfJ")
+    .then((resp) => {
+    if(resp.ok) {
+      return resp.json()
+    } else {
+    throw new Error("Discord server data broken")
+    }
+    })
+    .then((json) => {
+      console.log(json)
+      document.querySelector(".server-name").innerHTML = json.guild.name
+      document.querySelector(".server-desc").innerHTML = json.guild.description
+      document.querySelector("#user-count-1").innerHTML = json.profile.member_count
+    })
+</script>
+```
+:::
+
+Send an email to [Krisanat.Anukarnsakulchularp@monash.edu](mailto:Krisanat.Anukarnsakulchularp@monash.edu]) to join the official discord server
+
+:::
+

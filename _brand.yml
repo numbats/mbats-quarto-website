@@ -8,6 +8,7 @@ color:
     white: "#ffffff"
     purple: "#6a5fab"  
     lightpurple: "#6f7bd8"
+    lightpurplelow: "#cfd3f2" 
     yellow: "#fccf03" 
     green: "#698A3F"
   background: white 
