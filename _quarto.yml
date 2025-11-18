@@ -4,18 +4,21 @@ project:
 website:
   title: "MBAts"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+    right:
+      - href: events.qmd
+        text: Events
+      - href: unit_guide.qmd
+        text: Unit Guide
+      - href: course_map.qmd
+        text: Course Map
 
 format:
   html:
     theme:
-      - cosmo
+      - default
       - brand
     css: styles.css
-    toc: true
+    toc: false
 
 
 

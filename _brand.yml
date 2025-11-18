@@ -1,0 +1,17 @@
+meta:
+  name: MBAts
+
+color:
+  palette:
+    red: "#FF0000"
+    black: "#283618" # This is dark green that we will consider as black for now
+  primary: red
+  success: red
+  warning: red
+  danger: red
+
+typography:
+  base: "Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif" 
+  headings: "Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif"
+  link: "'Nimbus Mono PS', 'Courier New', monospace" 
+  monospace: "ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace"

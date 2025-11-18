@@ -2,6 +2,4 @@
 title: "MBAts"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Want to connect with current and past MBAts? Send an email to [Krisanat.Anukansakulchularp@monash.edu](mailto:Krisanat.Anukansakulchularp@monash.edu]) to join the official discord server
