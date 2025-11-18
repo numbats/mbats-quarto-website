@@ -1,19 +1,16 @@
----
-pagetitle: "Course Map"
----
 
-```{r}
-#| message: false
-#| echo: false
+# libraries ---------------------------------------------------------------
+
 library(tidygraph)
 library(ggraph)
 library(tidyverse)
 library(readxl)
+library(networkD3)
 library(ggiraph)
-```
 
-```{r}
-#| echo: false
+
+# data cleaning -----------------------------------------------------------
+
 raw_data <- read_xlsx("data/unit_descriptions.xlsx") |>
   janitor::clean_names() 
 
@@ -37,6 +34,13 @@ part_b_1 <- c("ETC5512", "ETC5513", "ETC5521", "ETC5523", "ETC5543")
 
 part_b_2 <- c("ETC5450", "ETC5555", "ETC5580", "ETX5500")
 
+first_first <- c("ETC5510", "ETC5512", "ETC5513")
+
+first_second <- c("ETC5242", "ETC5521", "ETC5523")
+
+second_first <- c("ETC5250", "ETC5450", "ETC5580")
+
+second_second <- c("ETC5550", "ETC5543", "ETC5555", "ETX5500")
 
 graph <- as_tbl_graph(data, directed = TRUE) |> 
   mutate(part = 
@@ -49,33 +53,52 @@ graph <- as_tbl_graph(data, directed = TRUE) |>
                                         "Part A. Advanced preparatory studies",
                                         "Part B. Core studies",
                                         "Part B. Core studies electives")),
+         layer = as.interger(case_when(
+           name %in% first_first ~ 2,
+           name %in% first_second ~ 3,
+           name %in% second_first ~ 4,
+           name %in% second_second ~ 5,
+           .default = 1
+         )),
          link = case_when(
            name == "MBAT" ~ "https://handbook.monash.edu/current/courses/B6022",
            .default = paste0("https://handbook.monash.edu/current/units/", name)
          )
   )
 
+
+# visualization -----------------------------------------------------------
+
+graph |> 
+  ggraph(layout = "sugiyama", layer = layer) +
+  geom_node_label(aes(label = name, fill = part)) +
+  geom_edge_diagonal(aes(start_cap = label_rect(node1.name),
+                         end_cap = label_rect(node2.name)),
+                     arrow = grid::arrow(length = unit(2, "mm")),
+                     strength = 0.7) +
+  scale_fill_manual(name = "Course Structure",
+                    values = c("white", "#92CDDC", "#DAEEF3", "#DAEEF3")) +
+  theme_void()
+
+
 # interactive -------------------------------------------------------------
 
 course <- graph |> 
   ggraph(layout = "sugiyama") +
-  geom_edge_diagonal(aes(start_cap = label_rect(node1.name),
-                         end_cap = label_rect(node2.name)),
-                     strength = 0.8) +
   geom_label_interactive(aes(x = x, y = y, label = name, fill = part, 
                              tooltip = part, data_id = name,
-                             onclick = sprintf("window.open(\"%s\")", link)),
-                             color = "white",
-                             label.padding = unit(0.8, "lines"),
-                             label.r = unit(0.5, "lines")) +
-  
+                             onclick = sprintf("window.open(\"%s\")", link))) +
+  geom_edge_diagonal(aes(start_cap = label_rect(node1.name),
+                         end_cap = label_rect(node2.name)),
+                     arrow = grid::arrow(length = unit(1.5, "mm")),
+                     strength = 0.8) +
   scale_fill_manual(name = "Course Structure",
-                    values = c("#698A3F", "#80A84D", "#94B865", "#A8C581")) +
+                    values = c("white", "#92CDDC", "#DAEEF3", "#DAEEF3")) +
   theme_void()
 
-girafe(ggobj = course, width_svg = 12, height_svg = 10,
+interactive_course <- girafe(ggobj = course, width_svg = 12,
                              options = list(
-                               opts_hover(css = "fill:#6f7bd8;stroke:white;stroke-width:1px")
+                               opts_hover(css = "fill:lightblue;stroke:grey;stroke-width:0.5px")
                              ))
-```
 
+htmltools::save_html(interactive_course, "course.html")

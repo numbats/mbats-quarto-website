@@ -5,7 +5,7 @@ color:
   palette:
     red: "#CC343F"
     black: "#0e1116" # This is dark green that we will consider as black for now
-    white: "#fbfbfe"
+    white: "#ffffff"
     purple: "#6a5fab"  
     lightpurple: "#6f7bd8"
     yellow: "#fccf03" 
