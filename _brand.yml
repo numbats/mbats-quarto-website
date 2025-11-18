@@ -3,10 +3,20 @@ meta:
 
 color:
   palette:
-    red: "#FF0000"
-    black: "#283618" # This is dark green that we will consider as black for now
-  primary: red
-  success: red
+    red: "#CC343F"
+    black: "#0e1116" # This is dark green that we will consider as black for now
+    white: "#fbfbfe"
+    purple: "#6a5fab"  
+    lightpurple: "#6f7bd8"
+    yellow: "#fccf03" 
+    green: "#698A3F"
+  background: white 
+  primary: purple
+  secondary: yellow
+  tertiary: lightpurple
+  light: white
+  dark: black
+  success: green 
   warning: red
   danger: red
 
