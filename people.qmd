@@ -1,0 +1,91 @@
+---
+pagetitle: "Our people"
+---
+
+```{=html}
+<style>
+  .people-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 16px;
+    width: 30%;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .card img {
+    height: 100px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .card-content {
+    flex: 1;
+  }
+  .card h2 {
+    margin: 0 0 4px;
+    font-size: 1.05rem;
+  }
+  .card h3 {
+    margin: 0 0 8px;
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: normal;
+  }
+  .card p {
+    margin: 0 0 8px;
+    font-size: 0.85rem;
+    color: #333;
+  }
+  .card a {
+    font-size: 0.8rem;
+    color: #0066cc;
+    text-decoration: none;
+  }
+</style>
+```
+
+```{=html}
+  <div class="people-container">
+
+    <!-- President -->
+    <div class="card">
+      <img src="griz.png" alt="Profile photo of Alex Johnson">
+      <div class="card-content">
+        <h2>Alex Johnson</h2>
+        <h3>President</h3>
+        <p>Alex is a second-year master's student interested in data science and student leadership.</p>
+        <a href="mailto:alex.johnson@example.edu">alex.johnson@example.edu</a>
+      </div>
+    </div>
+
+    <!-- First-Year Representative -->
+    <div class="card">
+      <img src="ice.png" alt="Profile photo of Maria Lee">
+      <div class="card-content">
+        <h2>Maria Lee</h2>
+        <h3>First-Year Representative</h3>
+        <p>Maria represents the first-year cohort and coordinates welcome events and feedback.</p>
+        <a href="mailto:maria.lee@example.edu">maria.lee@example.edu</a>
+      </div>
+    </div>
+
+    <!-- Second-Year Representative -->
+    <div class="card">
+      <img src="panda.png" alt="Profile photo of David Kim">
+      <div class="card-content">
+        <h2>David Kim</h2>
+        <h3>Second-Year Representative</h3>
+        <p>David works with second-year students to organize review sessions and networking events.</p>
+        <a href="mailto:david.kim@example.edu">david.kim@example.edu</a>
+      </div>
+    </div>
+
+  </div>
+
+```

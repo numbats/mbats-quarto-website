@@ -32,39 +32,32 @@ Planning your pathway? Explore the [Course Map](/course-map) to see how each uni
 
 Want to connect outside class? Join our Discord server to chat, collaborate, and stay in the loop with fellow students and alumni.
 
-:::{.discord-server}
+Excited to join in? Submit a request to join the official discord server through [this form](https://forms.gle/RYSpnoU1caEBikGf8)!
+
+:::{.discord-server style="width: fit-content; margin: 0 auto"}
 ```{=html}
 <style>
   /* Container */
   .server-card{
-    display:inline-flex;
+    display: flex;
+    flex-direction: row;
     align-items:center;
-    gap:12px;
     background:var(--brand-purple);
     padding: 1rem;
     border-radius: 20px;
     box-shadow:var(--shadow);
-    min-width:260px;
-    max-width:420px;
     color:var(--brand-white);
+    margin-bottom: 1rem;
+    gap: 2rem;
+    cursor: pointer;
+    width: fit-content
   }
 
   /* Text column */
   .server-meta{
     display:flex;
-    flex-direction:column;
+    flex-direction: row;
     gap:4px;
-  }
-  .server-name{
-    font-weight:600;
-    font-size:15px;
-    letter-spacing:0.2px;
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-  }
-  .server-desc{
-    font-size:12px;
   }
 
   /* User count chip */
@@ -72,38 +65,28 @@ Want to connect outside class? Join our Discord server to chat, collaborate, and
     margin-left:auto;
     display:flex;
     align-items:center;
-    gap:8px;
-    flex: 0 0 auto;
   }
   .users .count{
-    min-width:62px;
     text-align:center;
     background:var(--glass);
-    padding:8px 10px;
-    border-radius:10px;
-    font-weight:700;
-    font-size:14px;
-    color:var(--text);
-  }
-  .users .label{
-    font-size:11px;
-    text-align:center;
   }
 
 </style>
 <!-- Example card -->
-<div class="server-card" id="server-card-1" role="region" aria-label="Server status" aria-live="polite"
-     data-server-name="Arcane Designers" data-user-count="287">
-  <div class="server-meta">
-    <div class="server-name" id="server-name-1">MBAT</div>
-    <div class="server-desc" id="server-desc-1">A fun server for all things Stats, BA and MBAT related !!</div>
+<a href="https://forms.gle/RYSpnoU1caEBikGf8" style="text-decoration: none">
+  <div class="server-card" id="server-card-1">
+    <div style="padding-left: 2rem"> 
+    <div style="font-size: 2rem"> <i class="bi bi-discord"></i> MBAT </div> 
+      <div class="server-desc" id="server-desc-1">A fun server for all things Stats, BA and MBAT related !!</div>
+    </div>
+    <div style="padding-right: 2rem">
+    <div class="label" style="display: flex; flex-direction: column; align-items: center">
+        <svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+        <div class="count" id="user-count-1">33</div>
+      </div>
+    </div>
   </div>
-
-  <div class="users" aria-hidden="false">
-    <div class="count" id="user-count-1" aria-label="Current users">33</div>
-    <div class="label">users</div>
-  </div>
-</div>
+</a>
 
 <script>
   fetch("https://discord.com/api/invites/j7C7kGTXfJ")
@@ -116,15 +99,17 @@ Want to connect outside class? Join our Discord server to chat, collaborate, and
     })
     .then((json) => {
       console.log(json)
-      document.querySelector(".server-name").innerHTML = json.guild.name
+      document.querySelector(".server-name > span").innerHTML = json.guild.name
       document.querySelector(".server-desc").innerHTML = json.guild.description
       document.querySelector("#user-count-1").innerHTML = json.profile.member_count
     })
 </script>
 ```
+
 :::
 
-Send an email to [Krisanat.Anukarnsakulchularp@monash.edu](mailto:Krisanat.Anukarnsakulchularp@monash.edu]) to join the official discord server
+
+
 
 :::
 

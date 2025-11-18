@@ -10,7 +10,7 @@ website:
     pinned: true
     tools:
       - icon: discord
-        href: mailto:Krisanat.Anukarnsakulchularp@monash.edu 
+        href: https://forms.gle/RYSpnoU1caEBikGf8 
     right:
       - href: events.qmd
         text: Events
@@ -18,6 +18,8 @@ website:
       #   text: Unit Guide
       - href: course_map.qmd
         text: Course Map
+      - href: people.qmd
+        text: The People
 
 format:
   html:

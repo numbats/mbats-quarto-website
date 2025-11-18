@@ -15,20 +15,22 @@ library(ggiraph)
 ```{r}
 #| echo: false
 raw_data <- read_xlsx("data/unit_descriptions.xlsx") |>
-  janitor::clean_names() 
+  janitor::clean_names()
 
 mbat_unit <- unique(raw_data$code)
 
-data <- raw_data |> 
-  select(code, pre_requisites) |> 
-  mutate(pre_requisites = str_split(pre_requisites, ", ")) |> 
-  unnest(pre_requisites) |> 
-  mutate(pre_requisites = toupper(pre_requisites)) |> 
-  filter(pre_requisites %in% c(NA, mbat_unit),
-         !(code == "ETC5450" & pre_requisites %in% c("ETC5580", "ETC5250", "ETC5550"))) |> 
-  rename(to = code,
-         from = pre_requisites) |> 
-  mutate(from = ifelse(is.na(from), "MBAT", from))  
+data <- raw_data |>
+  select(code, pre_requisites) |>
+  mutate(pre_requisites = str_split(pre_requisites, ", ")) |>
+  unnest(pre_requisites) |>
+  mutate(pre_requisites = toupper(pre_requisites)) |>
+  filter(
+    pre_requisites %in% c(NA, mbat_unit),
+    !(code == "ETC5450" &
+      pre_requisites %in% c("ETC5580", "ETC5250", "ETC5550"))
+  ) |>
+  rename(to = code, from = pre_requisites) |>
+  mutate(from = ifelse(is.na(from), "MBAT", from))
 
 
 part_a <- c("ETC5242", "ETC5250", "ETC5510", "ETC5550")
@@ -38,44 +40,66 @@ part_b_1 <- c("ETC5512", "ETC5513", "ETC5521", "ETC5523", "ETC5543")
 part_b_2 <- c("ETC5450", "ETC5555", "ETC5580", "ETX5500")
 
 
-graph <- as_tbl_graph(data, directed = TRUE) |> 
-  mutate(part = 
-           case_when(
-             name %in% part_a ~ "Part A. Advanced preparatory studies",
-             name %in% part_b_1 ~ "Part B. Core studies",
-             name %in% part_b_2 ~ "Part B. Core studies electives",
-             .default = "Course"),
-         part = factor(part, levels = c("Course", 
-                                        "Part A. Advanced preparatory studies",
-                                        "Part B. Core studies",
-                                        "Part B. Core studies electives")),
-         link = case_when(
-           name == "MBAT" ~ "https://handbook.monash.edu/current/courses/B6022",
-           .default = paste0("https://handbook.monash.edu/current/units/", name)
-         )
+graph <- as_tbl_graph(data, directed = TRUE) |>
+  mutate(
+    part = case_when(
+      name %in% part_a ~ "Part A. Advanced preparatory studies",
+      name %in% part_b_1 ~ "Part B. Core studies",
+      name %in% part_b_2 ~ "Part B. Core studies electives",
+      .default = "Course"
+    ),
+    part = factor(
+      part,
+      levels = c(
+        "Course",
+        "Part A. Advanced preparatory studies",
+        "Part B. Core studies",
+        "Part B. Core studies electives"
+      )
+    ),
+    link = case_when(
+      name == "MBAT" ~ "https://handbook.monash.edu/current/courses/B6022",
+      .default = paste0("https://handbook.monash.edu/current/units/", name)
+    )
   )
 
 # interactive -------------------------------------------------------------
 
-course <- graph |> 
+course <- graph |>
   ggraph(layout = "sugiyama") +
-  geom_edge_diagonal(aes(start_cap = label_rect(node1.name),
-                         end_cap = label_rect(node2.name)),
-                     strength = 0.8) +
-  geom_label_interactive(aes(x = x, y = y, label = name, fill = part, 
-                             tooltip = part, data_id = name,
-                             onclick = sprintf("window.open(\"%s\")", link)),
-                             color = "white",
-                             label.padding = unit(0.8, "lines"),
-                             label.r = unit(0.5, "lines")) +
-  
-  scale_fill_manual(name = "Course Structure",
-                    values = c("#698A3F", "#80A84D", "#94B865", "#A8C581")) +
-  theme_void()
+  geom_edge_diagonal(
+    aes(start_cap = label_rect(node1.name), end_cap = label_rect(node2.name)),
+    strength = 0.8
+  ) +
+  geom_label_interactive(
+    aes(
+      x = x,
+      y = y,
+      label = name,
+      fill = part,
+      tooltip = part,
+      data_id = name,
+      onclick = sprintf("window.open(\"%s\")", link)
+    ),
+    color = "white",
+    label.padding = unit(0.8, "lines"),
+    label.r = unit(0.5, "lines"),
+  ) +
+  scale_fill_manual(
+    name = "Course Structure",
+    values = c("#698A3F", "#80A84D", "#94B865", "#A8C581")
+  ) +
+  theme_void() +
+  guides(fill = guide_legend(override.aes = aes(label = "   ")))
 
-girafe(ggobj = course, width_svg = 12, height_svg = 10,
-                             options = list(
-                               opts_hover(css = "fill:#6f7bd8;stroke:white;stroke-width:1px")
-                             ))
+girafe(
+  ggobj = course,
+  width_svg = 12,
+  height_svg = 10,
+  options = list(
+    opts_hover(css = "fill:#6f7bd8;stroke:white;stroke-width:1px"),
+    opts_zoom(default_on = TRUE, min = 0.7, max = 2)
+  )
+)
 ```
 
