@@ -55,34 +55,34 @@ pagetitle: "Our people"
 
     <!-- President -->
     <div class="card">
-      <img src="griz.png" alt="Profile photo of Alex Johnson">
+      <img src="griz.png" alt="Profile photo of Glizzly Bear">
       <div class="card-content">
-        <h2>Alex Johnson</h2>
+        <h2>Glizzly Bear</h2>
         <h3>President</h3>
-        <p>Alex is a second-year master's student interested in data science and student leadership.</p>
-        <a href="mailto:alex.johnson@example.edu">alex.johnson@example.edu</a>
+        <p>He is the oldest brother of the Bears. Being a grizzly bear, he is familiar with the forest area that the Bears live in.</p>
+        <a href="mailto:glizzly.bear@example.edu">glizzly.bear@example.edu</a>
       </div>
     </div>
 
     <!-- First-Year Representative -->
     <div class="card">
-      <img src="ice.png" alt="Profile photo of Maria Lee">
+      <img src="ice.png" alt="Profile photo of Ice Bear">
       <div class="card-content">
-        <h2>Maria Lee</h2>
+        <h2>Ice Bear</h2>
         <h3>First-Year Representative</h3>
-        <p>Maria represents the first-year cohort and coordinates welcome events and feedback.</p>
-        <a href="mailto:maria.lee@example.edu">maria.lee@example.edu</a>
+        <p>Ice Bear is the youngest of the trio, but is, undoubtedly, the strongest, the cleverest, and, in some respects, the most mature of them.</p>
+        <a href="mailto:ice.bear@example.edu">ice.bear@example.edu</a>
       </div>
     </div>
 
     <!-- Second-Year Representative -->
     <div class="card">
-      <img src="panda.png" alt="Profile photo of David Kim">
+      <img src="panda.png" alt="Profile photo of Panda Bear">
       <div class="card-content">
-        <h2>David Kim</h2>
+        <h2>Panda Bear</h2>
         <h3>Second-Year Representative</h3>
-        <p>David works with second-year students to organize review sessions and networking events.</p>
-        <a href="mailto:david.kim@example.edu">david.kim@example.edu</a>
+        <p>He seems to have more knowledge about things regarding technology and things from Asian culture. He is the middle brother and, as stated by Grizzly, is "the link that holds them all, together".</p>
+        <a href="mailto:panda.bear@example.edu">panda.bear@example.edu</a>
       </div>
     </div>
 
