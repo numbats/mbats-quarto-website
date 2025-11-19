@@ -1,0 +1,12 @@
+/* css styles */
+.resources-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.resource {
+  padding: 0.5rem 1rem;
+  background-color: var(--brand-lightpurplelow);
+  border-radius: 10px;
+}
