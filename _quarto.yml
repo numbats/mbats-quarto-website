@@ -12,8 +12,10 @@ website:
       - icon: discord
         href: https://forms.gle/RYSpnoU1caEBikGf8 
     right:
-      - href: events.qmd
-        text: Events
+      - text: Events
+        menu: 
+          - events.qmd
+          - hacky-hour.qmd
       # - href: unit_guide.qmd
       #   text: Unit Guide
       - href: course_map.qmd

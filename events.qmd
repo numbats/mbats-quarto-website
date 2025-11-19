@@ -2,6 +2,6 @@
 pagetitle: "Events"
 ---
 
-## Upcoming Events
+## Schedule
 
 <iframe src="https://calendar.google.com/calendar/embed?src=c_cb244ffd1ca657eb77b95748735c7e5a5d62528a0f3db24b7d6bee40dc75f70e%40group.calendar.google.com&ctz=Australia%2FMelbourne" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>

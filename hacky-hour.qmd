@@ -1,0 +1,39 @@
+---
+pagetitle: "Hacky Hour"
+---
+
+# Hacky Hour
+
+## What is Hacky Hour?
+
+Hacky hour is a weekly session where you can join to share and foster knowledge on research software development with each other. The session aims to foster an environment for anyone to get feedback and ideas on matters related to data science research software, facilitate peer mentoring, and network. Students would get an opportunity to present their work concisely (getting the practice they need), and teach concepts they learned and/or learn from others.
+
+### Date & Time
+
+Hacky hour takes place on Thursdays from 11:00 AM to 12:30 PM, with a virtual option available via [Zoom](https://monash.zoom.us/j/81899931654?pwd=k6f0auIOAUa4ZOCPoC8fPIYhgpmzVP.1). 
+
+### Location
+
+Room 317, Building 6, 29 Ancora Imparo Way (check Current [Schedule](events.qmd) to see where it's happening this week).
+
+### Format 
+
+Hacky hour is held in two formats.
+
+#### Shut Up and Code
+
+Consists of everyone working on their own projects in short bursts and sharing help with each other.
+
+#### Study Group / Brown bag sessions
+
+Consists of Show & Tell sessions or workshops where everyone shares the knowledge and questions they have gathered on different topics.
+
+
+## Motivation & Aim
+
+The use of software is generally a necessary, or even primary, component of research in statistics, but often statistically trained individuals are not well equipped or trained deeply on computer science, programming principles or even with handling real data. The main idea of this study group is to be greater than the sum of its parts, that is, rather than learning in isolation, we share knowledge and accelerate our learning – hopefully all while having fun! 
+
+The overarching aim of this study group is to foster an environment for Monash EBS students to get feedback and ideas from those outside their usual mentoring network (usually their supervisors) on matters related to data science research software, facilitate peer mentoring and network. The students get an opportunity to present their work concisely (getting the practice they need), teach concepts they learnt and/or learn from others. 
+
+## Code of conduct
+Use common sense - be kind and respectful. Criticism should be constructive and designed to improve a student's work.    
