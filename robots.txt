@@ -1,0 +1,1 @@
+Sitemap: https://numbats.github.io/mbats-quarto-website/sitemap.xml

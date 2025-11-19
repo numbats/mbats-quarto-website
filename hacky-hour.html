@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>MBAt Hang – MBAts</title>
+<title>Hacky Hour – MBAts</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -129,97 +129,40 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="mbat-hang-your-alumni-student-hub" class="level1">
-<h1>MBAt Hang: Your Alumni &amp; Student Hub</h1>
-<section id="for-master-of-business-analytics-at-monash-university" class="level3">
-<h3 class="anchored" data-anchor-id="for-master-of-business-analytics-at-monash-university">for Master of Business Analytics at Monash University</h3>
-<p>Welcome to MBAt Hang, the central gathering place for current students and alumni of the Business Analytics Masters program. This platform is built to strengthen community ties, celebrate achievements, and keep everyone informed about upcoming opportunities. Whether you’re a recent graduate looking to stay connected or a current student seeking guidance, this space is designed to help you grow, collaborate, and stay in the loop.</p>
-<div class="resources-list">
-<section id="upcoming-events" class="level4 resource" style="text-align: center">
-<h4 class="anchored" data-anchor-id="upcoming-events">Upcoming events</h4>
-<p>Curious about what’s happening this semester? Head over to the <a href="./events">Events</a> tab to explore upcoming workshops, meet-ups, and alumni sessions designed to help you connect, learn, and grow.</p>
+<section id="hacky-hour" class="level1">
+<h1>Hacky Hour</h1>
+<section id="what-is-hacky-hour" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-hacky-hour">What is Hacky Hour?</h2>
+<p>Hacky hour is a weekly session where you can join to share and foster knowledge on research software development with each other. The session aims to foster an environment for anyone to get feedback and ideas on matters related to data science research software, facilitate peer mentoring, and network. Students would get an opportunity to present their work concisely (getting the practice they need), and teach concepts they learned and/or learn from others.</p>
+<section id="date-time" class="level3">
+<h3 class="anchored" data-anchor-id="date-time">Date &amp; Time</h3>
+<p>Hacky hour takes place on Thursdays from 11:00 AM to 12:30 PM, with a virtual option available via <a href="https://monash.zoom.us/j/81899931654?pwd=k6f0auIOAUa4ZOCPoC8fPIYhgpmzVP.1">Zoom</a>.</p>
 </section>
-<section id="unit-guide" class="level4 resource" style="text-align: center">
-<h4 class="anchored" data-anchor-id="unit-guide">Unit Guide</h4>
-<p>Planning your pathway? Explore the <a href="./course-map">Course Map</a> to see how each unit connects and discover the study route that works best for you.</p>
+<section id="location" class="level3">
+<h3 class="anchored" data-anchor-id="location">Location</h3>
+<p>Room 317, Building 6, 29 Ancora Imparo Way (check Current <a href="./events.html">Schedule</a> to see where it’s happening this week).</p>
 </section>
-</div>
-<p><br></p>
-<section id="connect-with-us" class="level4 resource">
-<h4 class="anchored" data-anchor-id="connect-with-us">Connect with us</h4>
-<p>Want to connect outside class? Join our Discord server to chat, collaborate, and stay in the loop with fellow students and alumni.</p>
-<p>Excited to join in? Submit a request to join the official discord server through <a href="https://forms.gle/RYSpnoU1caEBikGf8">this form</a>!</p>
-<div class="discord-server" style="width: fit-content; margin: 0 auto">
-<style>
-  /* Container */
-  .server-card{
-    display: flex;
-    flex-direction: row;
-    align-items:center;
-    background:var(--brand-purple);
-    padding: 1rem;
-    border-radius: 20px;
-    box-shadow:var(--shadow);
-    color:var(--brand-white);
-    margin-bottom: 1rem;
-    gap: 2rem;
-    cursor: pointer;
-    width: fit-content
-  }
-
-  /* Text column */
-  .server-meta{
-    display:flex;
-    flex-direction: row;
-    gap:4px;
-  }
-
-  /* User count chip */
-  .users{
-    margin-left:auto;
-    display:flex;
-    align-items:center;
-  }
-  .users .count{
-    text-align:center;
-    background:var(--glass);
-  }
-
-</style>
-<!-- Example card -->
-<a href="https://forms.gle/RYSpnoU1caEBikGf8" style="text-decoration: none">
-  <div class="server-card" id="server-card-1">
-    <div style="padding-left: 2rem"> 
-    <div style="font-size: 2rem"> <i class="bi bi-discord"></i> MBAT </div> 
-      <div class="server-desc" id="server-desc-1">A fun server for all things Stats, BA and MBAT related !!</div>
-    </div>
-    <div style="padding-right: 2rem">
-    <div class="label" style="display: flex; flex-direction: column; align-items: center">
-        <svg viewbox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-        <div class="count" id="user-count-1">33</div>
-      </div>
-    </div>
-  </div>
-</a>
-
-<script>
-  fetch("https://discord.com/api/invites/j7C7kGTXfJ")
-    .then((resp) => {
-    if(resp.ok) {
-      return resp.json()
-    } else {
-    throw new Error("Discord server data broken")
-    }
-    })
-    .then((json) => {
-      console.log(json)
-      document.querySelector(".server-name > span").innerHTML = json.guild.name
-      document.querySelector(".server-desc").innerHTML = json.guild.description
-      document.querySelector("#user-count-1").innerHTML = json.profile.member_count
-    })
-</script>
-</div>
+<section id="format" class="level3">
+<h3 class="anchored" data-anchor-id="format">Format</h3>
+<p>Hacky hour is held in two formats.</p>
+<section id="shut-up-and-code" class="level4">
+<h4 class="anchored" data-anchor-id="shut-up-and-code">Shut Up and Code</h4>
+<p>Consists of everyone working on their own projects in short bursts and sharing help with each other.</p>
 </section>
+<section id="study-group-brown-bag-sessions" class="level4">
+<h4 class="anchored" data-anchor-id="study-group-brown-bag-sessions">Study Group / Brown bag sessions</h4>
+<p>Consists of Show &amp; Tell sessions or workshops where everyone shares the knowledge and questions they have gathered on different topics.</p>
+</section>
+</section>
+</section>
+<section id="motivation-aim" class="level2">
+<h2 class="anchored" data-anchor-id="motivation-aim">Motivation &amp; Aim</h2>
+<p>The use of software is generally a necessary, or even primary, component of research in statistics, but often statistically trained individuals are not well equipped or trained deeply on computer science, programming principles or even with handling real data. The main idea of this study group is to be greater than the sum of its parts, that is, rather than learning in isolation, we share knowledge and accelerate our learning – hopefully all while having fun!</p>
+<p>The overarching aim of this study group is to foster an environment for Monash EBS students to get feedback and ideas from those outside their usual mentoring network (usually their supervisors) on matters related to data science research software, facilitate peer mentoring and network. The students get an opportunity to present their work concisely (getting the practice they need), teach concepts they learnt and/or learn from others.</p>
+</section>
+<section id="code-of-conduct" class="level2">
+<h2 class="anchored" data-anchor-id="code-of-conduct">Code of conduct</h2>
+<p>Use common sense - be kind and respectful. Criticism should be constructive and designed to improve a student’s work.</p>
 
 
 </section>
