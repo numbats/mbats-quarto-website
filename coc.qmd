@@ -1,0 +1,43 @@
+---
+title: "Official Code of Conduct"
+---
+
+
+The Hacky Hour Committee is committed to providing an inclusive and safe learning environment for everyone, regardless of gender expression, sexual orientation, race, gender, religion (or lack thereof), or any other personal characteristic. We have a zero-tolerance policy toward bullying, harassment, discrimination, and participation in any illicit activities.
+
+This Code of Conduct applies to all Hacky Hour spaces, including weekly meetings, Discord, and the mailing list, both online and offline. Anyone who violates this Code of Conduct may be sanctioned or removed from these spaces at the discretion of the Code of Conduct Response Team.
+
+All participants and committee members at Hacky Hour agree to:
+
+* Treat each other with respect and be considerate in both speech and actions.
+* Conduct themselves appropriately at all Hacky Hour activities, in accordance with Monash University policies, procedures, and guidelines.
+* Refrain from demeaning, discriminatory, or harassing behaviour or speech. Harassment includes, but is not limited to:
+* Offensive comments related to gender, gender identity or expression, sexual orientation, disability, mental illness, neurodiversity, physical appearance, body size, age, race, or religion.
+* Deliberate misgendering or the use of “dead” or rejected names.
+* Sustained disruption of discussions.
+* A pattern of inappropriate social contact, such as requesting or assuming inappropriate levels of intimacy.
+* Harassing photography or recording, including logging online activity for the purpose of harassment.
+* Stalking or following.
+* Threats of violence.
+* Incitement of violence toward any individual, including encouraging a person to commit suicide or engage in self-harm.
+* Unwelcome sexual attention, including inappropriate sexual questions, requests for sexual favours, or repeatedly asking for dates or contact information.
+* Inappropriate physical contact, such as grabbing, hugging without consent, or massaging without consent.
+* Gratuitous or off-topic sexual images or behaviour in spaces where they are not appropriate.
+* Notify a member of the Code of Conduct Response Team (listed below) of any breach of this Code of Conduct to help maintain a safe and inclusive environment for all members.
+
+On Discord:
+
+* Avoid using overtly sexual or offensive usernames or profile photos that may detract from a friendly, safe, and welcoming environment.
+* Ensure that your actions comply with Monash University’s academic integrity policies. This includes avoiding collusion, and the unauthorized distribution of Monash materials. In particular, you must not share previous or current assignment submissions with another student enrolled in the same unit without the permission of the Chief Examiner.
+
+## Reporting
+
+If you are being harassed by a committee member, guest, or participant at Hacky Hour; notice that someone else is being harassed; or have any other concerns, please contact a member of the Code of Conduct Response Team:
+
+- Di Cook [(dicook@monash.edu)](mailto:dicook@monash.edu)
+- Michael Lydeamore [(michael.lydeamore@monash.edu)](mailto:michael.lydeamore@monash.edu)
+
+## Consequences
+
+Hacky Hour reserves the right to remove or sanction any participant who breaches this Code of Conduct. Participants engaging in harassing behaviour may receive a formal warning and be required to stop the behaviour. Continued violations may result in expulsion from activities. In serious cases, individuals may be removed immediately. 
+

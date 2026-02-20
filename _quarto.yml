@@ -22,6 +22,10 @@ website:
         text: Course Map
       - href: people.qmd
         text: The People
+      - text: About
+        menu: 
+          - href: coc.qmd
+            text: Code of Conduct
 
 format:
   html:

@@ -3,9 +3,14 @@ pagetitle: MBAt Hang
 ---
 
 # MBAt Hang: Your Alumni & Student Hub 
+
 ### for Master of Business Analytics at Monash University
 
-Welcome to MBAt Hang, the central gathering place for current students and alumni of the Business Analytics Masters program. This platform is built to strengthen community ties, celebrate achievements, and keep everyone informed about upcoming opportunities. Whether you're a recent graduate looking to stay connected or a current student seeking guidance, this space is designed to help you grow, collaborate, and stay in the loop.
+Welcome to MBAt Hang, the central gathering place for current students and alumni of the Business Analytics Masters program. 
+
+This platform is built to strengthen community ties, celebrate achievements, and keep everyone informed about upcoming opportunities. 
+
+Whether you're a recent graduate looking to stay connected or a current student seeking guidance, this space is designed to help you grow, collaborate, and stay in the loop.
 
 :::{.resources-list}
 :::{.resource style="text-align: center"}
@@ -32,7 +37,7 @@ Planning your pathway? Explore the [Course Map](/course-map) to see how each uni
 
 Want to connect outside class? Join our Discord server to chat, collaborate, and stay in the loop with fellow students and alumni.
 
-Excited to join in? Submit a request to join the official discord server through [this form](https://forms.gle/RYSpnoU1caEBikGf8)!
+Excited to join in? Submit a request to join the official discord server through [this form](https://forms.gle/F8naqubjujRqYnN9A)!
 
 :::{.discord-server style="width: fit-content; margin: 0 auto"}
 ```{=html}
