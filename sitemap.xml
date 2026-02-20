@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://numbats.github.io/mbats-quarto-website/unit_guide.html</loc>
+    <loc>https://mbat.numbat.space/unit_guide.html</loc>
     <lastmod>2025-11-19T05:58:35.640Z</lastmod>
   </url>
   <url>
-    <loc>https://numbats.github.io/mbats-quarto-website/index.html</loc>
-    <lastmod>2026-02-20T01:40:44.240Z</lastmod>
+    <loc>https://mbat.numbat.space/hacky-hour.html</loc>
+    <lastmod>2026-02-20T01:46:01.252Z</lastmod>
   </url>
   <url>
-    <loc>https://numbats.github.io/mbats-quarto-website/events.html</loc>
-    <lastmod>2025-11-19T05:58:35.634Z</lastmod>
-  </url>
-  <url>
-    <loc>https://numbats.github.io/mbats-quarto-website/coc.html</loc>
-    <lastmod>2026-02-20T01:32:39.261Z</lastmod>
-  </url>
-  <url>
-    <loc>https://numbats.github.io/mbats-quarto-website/course_map.html</loc>
+    <loc>https://mbat.numbat.space/course_map.html</loc>
     <lastmod>2025-11-19T05:58:35.633Z</lastmod>
   </url>
   <url>
-    <loc>https://numbats.github.io/mbats-quarto-website/people.html</loc>
+    <loc>https://mbat.numbat.space/coc.html</loc>
+    <lastmod>2026-02-20T01:46:01.261Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mbat.numbat.space/events.html</loc>
+    <lastmod>2026-02-20T01:46:01.251Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mbat.numbat.space/index.html</loc>
+    <lastmod>2026-02-20T01:46:01.262Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mbat.numbat.space/people.html</loc>
     <lastmod>2025-11-19T05:58:35.639Z</lastmod>
   </url>
 </urlset>
