@@ -8,6 +8,8 @@ pagetitle: "Our people"
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
+    padding-top: 16px;
+    justify-content: center;
   }
   .card {
     background: #ffffff;
@@ -20,7 +22,7 @@ pagetitle: "Our people"
     align-items: flex-start;
   }
   .card img {
-    height: 100px;
+    height: 150px;
     object-fit: cover;
     flex-shrink: 0;
   }
@@ -53,36 +55,53 @@ pagetitle: "Our people"
 ```{=html}
   <div class="people-container">
 
-    <!-- President -->
+    <!-- Co-President -->
     <div class="card">
-      <img src="griz.png" alt="Profile photo of Glizzly Bear">
+      <img src="pictures/janith.jpg" alt="Profile photo of Janith">
       <div class="card-content">
-        <h2>Glizzly Bear</h2>
-        <h3>President</h3>
-        <p>He is the oldest brother of the Bears. Being a grizzly bear, he is familiar with the forest area that the Bears live in.</p>
-        <a href="mailto:glizzly.bear@example.edu">glizzly.bear@example.edu</a>
+        <h2>Janith Wanniarachchi</h2>
+        <h3>Co-President</h3>
       </div>
     </div>
 
-    <!-- First-Year Representative -->
+    <!-- Co-President -->
     <div class="card">
-      <img src="ice.png" alt="Profile photo of Ice Bear">
+      <img src="pictures/kris.png" alt="Profile photo of Krisanat">
       <div class="card-content">
-        <h2>Ice Bear</h2>
-        <h3>First-Year Representative</h3>
-        <p>Ice Bear is the youngest of the trio, but is, undoubtedly, the strongest, the cleverest, and, in some respects, the most mature of them.</p>
-        <a href="mailto:ice.bear@example.edu">ice.bear@example.edu</a>
+        <h2>Krisanat Anukarnsakulchularp</h2>
+        <h3>Co-President</h3>
       </div>
     </div>
 
-    <!-- Second-Year Representative -->
+  </div>
+
+  <div class="people-container">
+    <!-- Public Relation -->
     <div class="card">
-      <img src="panda.png" alt="Profile photo of Panda Bear">
+      <img src="pictures/maliny.jpeg" alt="Profile photo of Maliny">
       <div class="card-content">
-        <h2>Panda Bear</h2>
-        <h3>Second-Year Representative</h3>
-        <p>He seems to have more knowledge about things regarding technology and things from Asian culture. He is the middle brother and, as stated by Grizzly, is "the link that holds them all, together".</p>
-        <a href="mailto:panda.bear@example.edu">panda.bear@example.edu</a>
+        <h2>Maliny Po</h2>
+        <h3>Public Relation</h3>
+      </div>
+    </div>
+
+    <!-- Treasurer -->
+    <div class="card">
+      <img src="pictures/new.jpeg" alt="Profile photo of Nutchanok">
+      <div class="card-content">
+        <h2>Nutchanok Saitin</h2>
+        <h3>Treasurer</h3>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="people-container">
+    <!-- Student Representative -->
+    <div class="card">
+      <div class="card-content">
+        <h2>TBD</h2>
+        <h3>Student Representative</h3>
       </div>
     </div>
 
