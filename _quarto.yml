@@ -9,13 +9,12 @@ website:
     search: false
     pinned: true
     tools:
-      - icon: discord
+      - icon: file-earmark-text-fill
         href: https://forms.gle/F8naqubjujRqYnN9A
     right:
       - text: Events
         menu: 
           - events.qmd
-          - hacky-hour.qmd
       # - href: unit_guide.qmd
       #   text: Unit Guide
       - href: course_map.qmd
