@@ -102,7 +102,7 @@ pagetitle: "Our people"
   <div class="people-container">
     <!-- Student Representative -->
     <div class="card">
-      <img src="pictures/malaika.jpeg" alt="Profile photo of Malaika">
+      <img src="pictures/malaika.png" alt="Profile photo of Malaika">
       <div class="card-content">
         <h2>Malaika Fernandes</h2>
         <h3>Student Representative</h3>
@@ -111,7 +111,7 @@ pagetitle: "Our people"
 
     <!-- Student Representative -->
     <div class="card">
-      <img src="pictures/linh.jpg" alt="Profile photo of Linh">
+      <img src="pictures/linh.png" alt="Profile photo of Linh">
       <div class="card-content">
         <h2>Linh Ngo</h2>
         <h3>Student Representative</h3>
