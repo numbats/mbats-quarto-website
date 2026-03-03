@@ -196,10 +196,10 @@ ul.task-list li input[type="checkbox"] {
 
 </style>
 <!-- Example card -->
-<a href="https://forms.gle/RYSpnoU1caEBikGf8" style="text-decoration: none">
+<a href="https://forms.gle/F8naqubjujRqYnN9A" style="text-decoration: none">
   <div class="server-card" id="server-card-1">
     <div style="padding-left: 2rem"> 
-    <div style="font-size: 2rem"> <i class="bi bi-discord"></i> MBAT </div> 
+    <div style="font-size: 2rem" class="server-name-card"> <i class="bi bi-discord"></i> MBAT </div> 
       <div class="server-desc" id="server-desc-1">A fun server for all things Stats, BA and MBAT related !!</div>
     </div>
     <div style="padding-right: 2rem">
@@ -221,8 +221,7 @@ ul.task-list li input[type="checkbox"] {
     }
     })
     .then((json) => {
-      console.log(json)
-      document.querySelector(".server-name > span").innerHTML = json.guild.name
+      document.querySelector(".server-name-card").innerHTML = json.guild.name
       document.querySelector(".server-desc").innerHTML = json.guild.description
       document.querySelector("#user-count-1").innerHTML = json.profile.member_count
     })

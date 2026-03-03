@@ -25,7 +25,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 75vw;
+    max-width: 60vw;
   }
 }
 .people-card {
@@ -43,12 +43,12 @@
   margin: 0 auto;
 }
 .people-card img {
-  height: 150px;
-  width: 150px;
+  width: 60%;
   object-fit: cover;
   flex-shrink: 0;
   margin: auto;
   border-radius: 50%;
+  aspect-ratio: 1;
 }
 .people-card-content {
   flex: 1;
