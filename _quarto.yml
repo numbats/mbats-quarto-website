@@ -4,7 +4,7 @@ project:
     port: 7211
 
 website:
-  title: "MBAts"
+  title: "MBAT Hang"
   navbar:
     search: false
     pinned: true
