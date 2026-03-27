@@ -17,14 +17,14 @@ Whether you're a recent graduate looking to stay connected or a current student 
 
 #### Upcoming events
 
-Curious about what’s happening this semester? Head over to the [Events](/events) tab to explore upcoming workshops, meet-ups, and alumni sessions designed to help you connect, learn, and grow.
+Curious about what’s happening this semester? Head over to the [Events](/events.html) tab to explore upcoming workshops, meet-ups, and alumni sessions designed to help you connect, learn, and grow.
 
 :::
 :::{.resource style="text-align: center"}
 
 #### Unit Guide
 
-Planning your pathway? Explore the [Course Map](/course-map) to see how each unit connects and discover the study route that works best for you.
+Planning your pathway? Explore the [Course Map](/course_map.html) to see how each unit connects and discover the study route that works best for you.
 
 :::
 :::
