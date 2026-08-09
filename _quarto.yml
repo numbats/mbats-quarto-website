@@ -31,7 +31,8 @@ format:
     theme:
       - default
       - brand
-    css: styles.css
+      - styles/theme.scss
+    css: styles/styles.css
     toc: false
 
 

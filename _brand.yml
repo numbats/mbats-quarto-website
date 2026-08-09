@@ -4,17 +4,20 @@ meta:
 color:
   palette:
     red: "#CC343F"
-    black: "#0e1116" # This is dark green that we will consider as black for now
-    white: "#ffffff"
-    purple: "#6a5fab"  
-    lightpurple: "#6f7bd8"
-    lightpurplelow: "#cfd3f2" 
+    black: "#313638"
+    white: "#e8e9eb"
+
     yellow: "#fccf03" 
     green: "#698A3F"
-  background: white 
-  primary: purple
-  secondary: yellow
-  tertiary: lightpurple
+
+    redorange: "#F06543"
+    orange: "#F09D51"
+
+  background: white
+  primary: redorange
+  secondary: orange
+  tertiary: orange
+
   light: white
   dark: black
   success: green 
