@@ -2,9 +2,10 @@ project:
   type: website
   preview:
     port: 7211
+    browser: false
 
 website:
-  title: "MBAT Hang"
+  title: "MBAT Club"
   navbar:
     search: false
     pinned: true
@@ -12,19 +13,19 @@ website:
       - icon: file-earmark-text-fill
         href: https://forms.gle/F8naqubjujRqYnN9A
     right:
-      - text: Events
-        menu: 
-          - events.qmd
+      # - text: Events
+      #   menu: 
+      #     - events.qmd
       # - href: unit_guide.qmd
       #   text: Unit Guide
-      - href: course_map.qmd
-        text: Course Map
-      - href: people.qmd
-        text: The People
+      # - href: course_map.qmd
+      #   text: Course Map
       - text: About
         menu: 
           - href: coc.qmd
             text: Code of Conduct
+          - href: people.qmd
+            text: The People
 
 format:
   html:
@@ -32,6 +33,11 @@ format:
       - default
       - brand
       - styles/theme.scss
+      - styles/hero.scss
+      - styles/calendar.scss
+      - styles/discord.scss
+      - styles/resources.scss
+      - styles/people.scss
     css: styles/styles.css
     toc: false
 

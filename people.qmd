@@ -41,12 +41,21 @@ pagetitle: "Our people"
       </div>
     </div>
 
+
+    <div class="people-card">
+      <img src="pictures/pinky.jpeg" alt="Profile photo of Nutchanok">
+      <div class="people-card-content">
+        <h2>Thunchanok Udomittipong</h2>
+        <h3>Vice Treasurer</h3>
+      </div>
+    </div>
+
     <!-- Student Representative -->
     <div class="people-card">
       <img src="pictures/malaika.png" alt="Profile photo of Malaika">
       <div class="people-card-content">
         <h2>Malaika Fernandes</h2>
-        <h3>Student Representative</h3>
+        <h3>2nd year Student Representative</h3>
       </div>
     </div>
 
@@ -55,9 +64,28 @@ pagetitle: "Our people"
       <img src="pictures/linh.png" alt="Profile photo of Linh">
       <div class="people-card-content">
         <h2>Linh Ngo</h2>
-        <h3>Student Representative</h3>
+        <h3>2nd year Student Representative</h3>
       </div>
     </div>
+
+    <!-- Student Representative -->
+    <div class="people-card">
+      <img src="pictures/waranya.JPEG" alt="Profile photo of Malaika">
+      <div class="people-card-content">
+        <h2>Waranya Ratirotjanakul </h2>
+        <h3>1st year Student Representative</h3>
+      </div>
+    </div>
+
+    <!-- Student Representative -->
+    <div class="people-card">
+      <img src="pictures/stim.JPEG" alt="Profile photo of Linh">
+      <div class="people-card-content">
+        <h2>Smit Timbat</h2>
+        <h3>1st year Student Representative</h3>
+      </div>
+    </div>
+
 
   </div>
 

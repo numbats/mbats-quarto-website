@@ -1,0 +1,65 @@
+```{=html}
+<script>
+  // --- CONFIGURATION ---
+  function renderEvents(events) {
+    eventsContainer.innerHTML = ""; // Clear loading state
+
+    events.forEach((event) => {
+      // Handle both specific times (dateTime) and all-day events (date)
+      const eventStart = new Date(event.start.dateTime || event.start.date);
+
+      const month = eventStart.toLocaleString("default", { month: "short" });
+      const day = eventStart.getDate();
+      const timeString = event.start.dateTime
+        ? eventStart.toLocaleTimeString([], {
+            hour: "2-digit",
+            minute: "2-digit",
+          })
+        : "All Day";
+
+      const card = document.createElement("div");
+      card.className = "event-card";
+
+      card.innerHTML = `
+        <div class="event-date">${month} ${day}</div>
+        <h3 class="event-title">${event.summary}</h3>
+        <div class="event-time-loc">
+          <span>🕒 ${timeString}</span>
+          ${event.location ? `<span>📍 ${event.location}</span>` : ""}
+        </div>
+      `;
+      eventsContainer.appendChild(card);
+    });
+  }
+
+  const mock = true;
+  if (mock) {
+    const mockEvents = [
+      {
+        summary: "Design Workshop",
+        start: { dateTime: "2026-08-15T10:00:00" },
+        location: "Main Hall",
+      },
+      {
+        summary: "Community Meetup",
+        start: { dateTime: "2026-08-18T18:30:00" },
+        location: "Cafe Area",
+      },
+      {
+        summary: "Annual Tech Conference",
+        start: { date: "2026-08-22" },
+        location: "Convention Center",
+      },
+    ];
+    renderEvents(mockEvents);
+  } else {
+    fetch("https://spring-sound-410c.janithcwanni.workers.dev")
+      .then((response) => {
+        return response.json();
+      })
+      .then((events) => {
+        renderEvents(events);
+      });
+  }
+</script>
+```

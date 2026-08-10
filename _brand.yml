@@ -5,7 +5,8 @@ color:
   palette:
     red: "#CC343F"
     black: "#313638"
-    white: "#e8e9eb"
+    gray: "#e8e9eb"
+    white: "#ffffff"
 
     yellow: "#fccf03" 
     green: "#698A3F"

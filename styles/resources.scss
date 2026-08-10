@@ -1,0 +1,105 @@
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+
+/* css styles */
+.resource {
+  padding: 0.5rem 1rem;
+  background-color: $secondary;
+  border-radius: 10px;
+}
+
+.resources-list {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-top: 5rem;
+}
+
+/* Container layout: Responsive grid that adjusts to screen size */
+.modern-resources-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  padding: 20px 0;
+}
+
+/* Card styling: Clean white background, rounded corners, soft shadow */
+.resource-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+/* Interactive hover effect: Lift up and enhance shadow */
+.resource-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 20px -3px rgba(0, 0, 0, 0.1);
+  border-color: $secondary; /* Modern blue */
+}
+
+/* Icon container */
+.resource-icon {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 20px;
+  background-color: lighten($primary, 30%);
+  color: $primary;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.resource-card:hover .resource-icon {
+  background: $primary;
+  color: #ffffff;
+}
+
+/* Typography */
+.resource-card h4 {
+  margin: 0 0 12px 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.resource-card p {
+  margin: 0 0 24px 0;
+  color: #4b5563;
+  line-height: 1.6;
+  flex-grow: 1; /* Pushes the button to the bottom */
+}
+
+/* Pseudo-button for CTA */
+.resource-btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #f3f4f6;
+  color: #374151;
+  border-radius: 8px;
+  font-weight: 500;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.resource-card:hover .resource-btn {
+  background-color: $primary;
+  color: #ffffff;
+}
