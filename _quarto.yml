@@ -18,8 +18,12 @@ website:
       #     - events.qmd
       # - href: unit_guide.qmd
       #   text: Unit Guide
-      # - href: course_map.qmd
-      #   text: Course Map
+      - href: course_map.qmd
+        text: Course Map
+      - text: Events
+        href: events.qmd
+      - text: Contact us
+        href: https://forms.gle/9Tmx25sxkJ6svSma8 
       - text: About
         menu: 
           - href: coc.qmd
