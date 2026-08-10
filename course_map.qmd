@@ -87,7 +87,7 @@ course <- graph |>
   ) +
   scale_fill_manual(
     name = "Course Structure",
-    values = c("#698A3F", "#80A84D", "#94B865", "#A8C581")
+    values = c("#CC343F", "#F06543", "#F09D51", "#fccf03")
   ) +
   theme_void() +
   guides(fill = guide_legend(override.aes = aes(label = "   ")))
