@@ -3,24 +3,30 @@ meta:
 
 color:
   palette:
-    red: "#CC343F"
-    black: "#313638"
-    gray: "#e8e9eb"
+    # Taken from the MBAT Club logo
+    navy: "#0F2F96"
+    blue: "#2F5BD0"
+    skyblue: "#ABCBEE"
+    cream: "#F5F3E3"
+
+    black: "#1B2340"
+    gray: "#E6E8F0"
     white: "#ffffff"
 
-    yellow: "#fccf03" 
-    green: "#698A3F"
+    # Sticker accents (sun, tree, tulip)
+    yellow: "#F2B53A"
+    green: "#7A9A4A"
+    red: "#D9483B"
+    orange: "#E8693F"
 
-    redorange: "#F06543"
-    orange: "#F09D51"
+  background: cream
+  foreground: black
+  primary: navy
+  secondary: skyblue
+  tertiary: blue
 
-  background: white
-  primary: redorange
-  secondary: orange
-  tertiary: orange
-
-  light: white
-  dark: black
+  light: cream
+  dark: navy
   success: green 
   warning: red
   danger: red

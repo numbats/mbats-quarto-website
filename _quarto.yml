@@ -6,7 +6,15 @@ project:
 
 website:
   title: "MBAT Club"
+  favicon: pictures/logo/favicon.png
+  image: pictures/logo/mbat-logo.png
+  open-graph: true
   navbar:
+    logo: pictures/logo/mbat-logo.webp
+    logo-alt: "MBAT Club logo"
+    title: false
+    background: light
+    foreground: primary
     search: false
     pinned: true
     tools:

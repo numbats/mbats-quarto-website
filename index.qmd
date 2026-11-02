@@ -45,7 +45,10 @@ pagetitle: MBAT Hang
 
         <!-- 3. Foreground Content -->
         <div class="hero-content">
-            <div class="h1-text">Welcome to the <span class="highlight">MBAT Club</span></div>
+            <div class="hero-title" role="heading" aria-level="1">
+                <span class="hero-eyebrow">Welcome to the</span>
+                <img class="hero-logo" src="pictures/logo/mbat-logo.webp" alt="MBAT Club">
+            </div>
             <p class="logline">Connect, collaborate, and conquer your academic journey with a community that has your back.</p>
         </div>
     </section>

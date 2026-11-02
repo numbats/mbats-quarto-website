@@ -41,7 +41,7 @@
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
-  border-left: 4px solid var(--primary);
+  border-left: 4px solid $primary;
 }
 
 .event-card:hover {
@@ -63,7 +63,7 @@
 .event-title {
   font-size: 1.125rem;
   font-weight: 600;
-  color: $black;
+  color: $primary;
   margin: 0 0 0.5rem 0;
 }
 
@@ -89,7 +89,7 @@
 }
 
 .btn:hover {
-  background-color: darken($primary, 10%);
+  background-color: $tertiary;
   color: white;
 }
 

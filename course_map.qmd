@@ -87,7 +87,7 @@ course <- graph |>
   ) +
   scale_fill_manual(
     name = "Course Structure",
-    values = c("#CC343F", "#F06543", "#F09D51", "#fccf03")
+    values = c("#0F2F96", "#2F5BD0", "#7A9A4A", "#E8693F")
   ) +
   theme_void() +
   guides(fill = guide_legend(override.aes = aes(label = "   ")))
@@ -97,7 +97,7 @@ girafe(
   width_svg = 12,
   height_svg = 10,
   options = list(
-    opts_hover(css = "fill:#6f7bd8;stroke:white;stroke-width:1px"),
+    opts_hover(css = "fill:#F2B53A;stroke:white;stroke-width:1px"),
     opts_zoom(default_on = TRUE, min = 0.7, max = 2)
   )
 )

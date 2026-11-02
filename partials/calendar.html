@@ -4,6 +4,11 @@
   function renderEvents(events) {
     eventsContainer.innerHTML = ""; // Clear loading state
 
+    if (events.length === 0) {
+      eventsContainer.innerHTML = `<div class="loading">No upcoming events right now. Check back soon!</div>`;
+      return;
+    }
+
     events.forEach((event) => {
       // Handle both specific times (dateTime) and all-day events (date)
       const eventStart = new Date(event.start.dateTime || event.start.date);
@@ -55,10 +60,15 @@
   } else {
     fetch("https://spring-sound-410c.janithcwanni.workers.dev")
       .then((response) => {
+        if (!response.ok) throw new Error(`Worker responded ${response.status}`);
         return response.json();
       })
       .then((events) => {
-        renderEvents(events);
+        renderEvents(Array.isArray(events) ? events : []);
+      })
+      .catch((error) => {
+        console.error("Error loading events:", error);
+        eventsContainer.innerHTML = `<div class="loading">Couldn't load events right now. Please try again later.</div>`;
       });
   }
 </script>

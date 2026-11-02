@@ -5,8 +5,8 @@
 /* --- Base Variables & Setup --- */
 :root {
   --card-bg: #ffffff;
-  --text-main: #1e293b;
-  --text-role: #3b82f6;
+  --text-main: #{$black};
+  --text-role: #{$tertiary};
   --shadow-rest:
     0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-hover:
@@ -81,7 +81,7 @@
 .people-card-content h3 {
   margin: 0;
   font-size: 0.875rem;
-  color: var(--brand-redorange);
+  color: var(--text-role);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: 600;
